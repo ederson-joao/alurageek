@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AluraGeek</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>Alura Geek</header>
+<div class="container">
+  <section id="add-product">
+    <h2>Adicionar <br>Produto</h2>
+    <input type="text" id="productName" placeholder="Nome do Produto">
+    <input type="number" id="productPrice" placeholder="Preço do Produto">
+    <input type="text" id="productImage" placeholder="URL da Imagem">
+    <section class="buttons">
+        <button onclick="addProduct()">Adicionar</button>
+        <button onclick="clearFields()">Limpar</button>
+    </section>
+  </section>
+  <section id="products">
+    <h2>Produtos</h2>
+    <ul id="product-list">
+      <!-- Aqui serão adicionados os produtos dinamicamente -->
+    </ul>
+  </section>
+</div>
+<script src="script.js"></script>
+<footer>
+  <h1>Alura Geek</h1>
+  <h2>Desenvolvido por Ederson Santos</h2>
+</footer>
+</body>
+</html>

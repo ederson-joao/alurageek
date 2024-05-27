@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Press+Start+2P&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+
+  header {
+    background-color: #5300C8;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Press Start 2P", system-ui;
+    font-size: 24px;
+    color: #ffffff;
+  }
+  
+  .container {
+    width: 412px;
+    margin: 5px auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 24px;
+    font-family: "Press Start 2P", system-ui;
+    
+  }
+  
+  #products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  #product-list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  
+  .product {
+    width: 186px;
+    height: 255px;
+    padding: 5px 0 5px 0;
+    margin: 4px;
+    border: 3px #000000 solid;
+    border-radius: 10px;
+    background-color: #5D04D9;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  
+  .product img {
+    width: 166px;
+    height: 164px;
+    border-radius: 5px;
+    border: 3px #000000 solid;
+  }
+  
+  .product .name, .price {
+    font-family: "IBM Plex Mono", monospace;
+    color: #ffffff;
+  }
+
+  .product .name {
+    text-align: center;
+  }
+
+  .product section {
+    display: flex;
+    width: 160px;
+    justify-content: space-between;
+  }
+
+  .product button {
+    background-color: transparent;
+    border: none;
+  }
+
+  .product button img {
+    width: 20px;
+    height: 20px;
+    border: none;
+  }
+
+  #add-product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  #add-product input {
+    width: 317px;
+    height: 40px;
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 14px;
+    font-size: 16px;
+    border: 2.5px solid #03318C;
+    text-align: center;
+    font-family: "IBM Plex Mono", monospace;
+  }
+  
+  #add-product button {
+    width: 164px;
+    height: 55px;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: "IBM Plex Mono", monospace;
+  }
+  
+  #add-product button:hover {
+    background-color: #0056b3;
+  }
+
+  footer {
+    background-color: #5300C8;
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5px;
+    font-family: "Press Start 2P", system-ui;
+    color: #ffffff;
+  }
+
+  footer h1 {
+    font-size: 24px;
+  }
+
+  footer h2 {
+    font-size: 16px;
+  }
+  
+  @media screen and (min-width: 1024px) {
+    header {
+      width: 1000px;
+      margin: auto;
+    }
+
+    .container {
+      width: 1000px;
+      display: flex;
+      flex-direction: row-reverse;
+    }
+
+    #product-list {
+      justify-content: center;
+      height: 840px;
+      overflow-y: scroll;
+      overflow: auto;
+      
+    }
+
+    #add-product {
+      padding: 0 25px 0 10px;
+    }
+
+    #add-product button {
+      width: 162px;
+      height: 54px;
+    }
+
+    footer {
+      width: 1000px;
+      margin: auto;
+    }
+  }
